@@ -97,15 +97,13 @@ public class Car {
         return Objects.hash(year, model, color, brand, speed, price);
     }
 
-    public void startCar() {
-        System.out.println("Wwwroooommmm!");
+    public String startCar() {
+        return "Wwwroooommmm!";
     }
 
-    public void accelerateSpeed(int accelerationRateMperS) {
-        if (speed < 250) {
-            speed += accelerationRateMperS;
-            System.out.println("Wooohou, your " + brand + " " + model + " is that fast! Your actual speed is: " + speed + "!!");
-        }
+    public void accelSpeed() {
+        int accelerationRate = 10;
+        speed += accelerationRate;
     }
 
 }

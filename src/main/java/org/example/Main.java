@@ -5,12 +5,12 @@ public class Main {
 
         Car myCar = new Car("Toyota", "Corolla", "lilac", 2002);
         myCar.startCar();
-
         Car yourCar = new Car("Subaru", "Forester", "silver", 1998);
-//        yourCar.startCar();
-//        yourCar.accelerateSpeed(25);
-//        yourCar.accelerateSpeed(25);
-//        System.out.println(yourCar.getSpeed());
+        System.out.println("Your " + yourCar.getBrand() + " startet! " + yourCar.startCar());
+        yourCar.accelSpeed();
+        System.out.println("After acceleration your car has speed of: " + yourCar.getSpeed());
+        yourCar.accelSpeed();
+        System.out.println("After acceleration your car has speed of: " + yourCar.getSpeed());
 
 
         // Exercise OOP-II
