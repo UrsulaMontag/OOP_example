@@ -17,16 +17,14 @@ public class Main {
         Book myBook = new Book("Bios", "343-343-3434-3434", "Daniel Suarez");
         Book myBook1 = new Book("Deamon", "343-343-999-3434", "Daniel Suarez");
         Book myBook2 = new Book("Darknet", "343-343-666-3434", "Daniel Suarez");
-        System.out.println(myBook);
-
-        Book[] myBooks = {myBook, myBook1, myBook2};
-
-        Library myLibrary = new Library(myBooks);
-        System.out.println(myLibrary);
-
         Book myBook4 = new Book("Critical Mass", "343-343-666-3434", "Daniel Suarez");
         Book myBook5 = new Book("Delta-V", "343-343-666-3434", "Daniel Suarez");
         Book badBook = new Book("Langweilige Geschichten", "45646-4657-5456", "Bore Ing");
+        System.out.println(myBook);
+
+        Book[] myBooks = {myBook, myBook1, myBook2};
+        Library myLibrary = new Library(myBooks);
+        System.out.println(myLibrary);
 
         myLibrary.addBook(badBook);
         myLibrary.addBook(myBook4);
@@ -35,9 +33,5 @@ public class Main {
 
         myLibrary.deleteBook(badBook);
         System.out.println(myLibrary);
-
-
     }
-
-
 }
