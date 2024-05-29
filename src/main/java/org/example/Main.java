@@ -13,14 +13,7 @@ public class Main {
         yourCar.startCar();
         yourCar.accelerateSpeed(25);
         yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
-        yourCar.accelerateSpeed(25);
+
     }
 
 
