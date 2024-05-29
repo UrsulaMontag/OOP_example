@@ -3,9 +3,6 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Book dominicsBook = new Book("Das merk ich mir", "656-543-7865-4565", false, "White", 24.99);
-        dominicsBook.printBook();
-
         Car myCar = new Car("Toyota", "Corolla", "lilac", 2002);
         myCar.startCar();
 
@@ -13,6 +10,10 @@ public class Main {
         yourCar.startCar();
         yourCar.accelerateSpeed(25);
         yourCar.accelerateSpeed(25);
+        System.out.println(yourCar.getSpeed());
+
+        Book myBook = new Book("Bios", "343-343-3434-3434", "Daniel Suarez");
+        System.out.println(myBook);
 
     }
 
