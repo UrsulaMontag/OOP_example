@@ -8,12 +8,12 @@ public class Car {
     public int year;
     public int speed;
 
-    public Car(String brand, String model, String color, int year, int speed) {
+    public Car(String brand, String model, String color, int year) {
         this.brand = brand;
         this.model = model;
         this.color = color;
         this.year = year;
-        this.speed = speed;
+        this.speed = 0;
     }
 
     public void startCar() {
@@ -21,10 +21,10 @@ public class Car {
     }
 
     public void accelerateSpeed(int accelerationRateMperS) {
-        for (int i = 0; i < speed; i += accelerationRateMperS) {
-            System.out.println("Wooohou, your " + brand + " " + model + " is that fast! Your actual speed is: " + i + "!!");
+        if (speed < 250) {
+            speed += accelerationRateMperS;
+            System.out.println("Wooohou, your " + brand + " " + model + " is that fast! Your actual speed is: " + speed + "!!");
         }
-
     }
 
 }
