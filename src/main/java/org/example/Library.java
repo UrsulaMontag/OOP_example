@@ -24,4 +24,12 @@ public class Library {
                 '}';
     }
 
+    public void addBook(Book book) {
+        books = Arrays.copyOf(books, books.length + 1);
+        books[books.length - 1] = book;
+    }
+
+    public void deleteBook(Book book) {
+        books = Arrays.stream(books).filter(b -> !b.equals(book)).toArray(Book[]::new);
+    }
 }

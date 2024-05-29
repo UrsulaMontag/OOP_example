@@ -12,6 +12,7 @@ public class Main {
 //        yourCar.accelerateSpeed(25);
 //        System.out.println(yourCar.getSpeed());
 
+
         // Exercise OOP-II
         Book myBook = new Book("Bios", "343-343-3434-3434", "Daniel Suarez");
         Book myBook1 = new Book("Deamon", "343-343-999-3434", "Daniel Suarez");
@@ -22,6 +23,19 @@ public class Main {
 
         Library myLibrary = new Library(myBooks);
         System.out.println(myLibrary);
+
+        Book myBook4 = new Book("Critical Mass", "343-343-666-3434", "Daniel Suarez");
+        Book myBook5 = new Book("Delta-V", "343-343-666-3434", "Daniel Suarez");
+        Book badBook = new Book("Langweilige Geschichten", "45646-4657-5456", "Bore Ing");
+
+        myLibrary.addBook(badBook);
+        myLibrary.addBook(myBook4);
+        myLibrary.addBook(myBook5);
+        System.out.println(myLibrary);
+
+        myLibrary.deleteBook(badBook);
+        System.out.println(myLibrary);
+
 
     }
 
